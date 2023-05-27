@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+   /* background: url(../img/fondo_de_login.jpeg) no-repeat center top;*/
+    background: #30d6ff;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 150vh;
+
+}
+
+h1{
+   text-align: center;
+   padding: 50px;
+   color: #ffffff;
+}
+
+.Restore_Password{
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    background: #2f1aebe1;
+   /*background: url(../img/ima_loin.jpg) no-repeat center top;*/
+}
+
+h2{
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.Correo{
+    width: 93%;
+    border: none;
+    background: none;
+    border-bottom: solid rgb(255, 255, 255) 1px;
+    padding: 20px;
+    outline: none;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.Correo:focus{
+    border-bottom: solid rgb(255, 187, 0) 1px;
+}
+
+.Form__Button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Salir{
+    text-decoration: none;
+    background: transparent;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #ffffff; 
+}
+
+.Salir:hover{
+    background: #ffae00;
+    border-radius: 20px;
+}
+
+.Enviar{
+    text-decoration: none;
+    background: transparent;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+}
+.Enviar:hover{
+    background: #ffae00;
+    border-radius: 20px;
+}
