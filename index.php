@@ -1,19 +1,16 @@
 <?php
 
-    session_start();
-    
-    if(isset($_SESSION['usuario'])){
-        header("location: FirmaRegistrada.php");
-    }
+session_start();
+
+if (isset($_SESSION['usuario'])) {
+    header("location: FirmaRegistrada.php");
+}
 
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,9 +18,12 @@
     <title>Inicio de Sesión y Registro - Proyect-Derecho</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/estilos.css">    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
+
 <body>
     <main>
         <div class="contenedor_todo">
@@ -31,8 +31,8 @@
                 <div class="caja_trasera-IniciodeSesion">
                     <h3> Ya tienes una cuenta</h3>
                     <p>Inicie sesión para ingresar a la cuenta</p>
-                    <button id="btn_iniciar-sesion">Iniciar Sesión</button>  
-            </div>
+                    <button id="btn_iniciar-sesion">Iniciar Sesión</button>
+                </div>
                 <div class="caja_trasera-Registro">
                     <h3>¿Aun no tienes una cuenta?</h3>
                     <p>Registrate para que puedes iniciar sesión</p>
@@ -46,6 +46,7 @@
                     <h2>Iniciar Sesión</h2>
                     <input type="text" placeholder="Correo Electronico" name="Correo">
                     <input type="password" placeholder="Contraseña" name="Contrasena">
+                    <a href="php/RestContra.php">olvide mi contraseaña</a>
                     <button>Iniciar Sesión</button>
                 </form>
                 <!--Registro-->
@@ -55,12 +56,17 @@
                     <input type="text" placeholder="Correo Electronico" name="Correo">
                     <input type="number" placeholder="DPI" name="DPI">
                     <input type="number" placeholder="Telefono" name="Telefono">
-                    <input type="password" placeholder="Contraseña" name="Contrasena">
-                    <input type="password" placeholder="Confirmar Contraseña" name="ConfContrasena">
+                    <input type="password" placeholder="Contraseña" name="Contrasena" required>
+                    <span class="show-btn"><i class="fas fe-eye"></i></span>
+                    <input type="password" placeholder="Confirmar Contraseña" name="ConfContrasena" required>
                     <button>Registrar</button>
                 </form>
             </div>
         </div>
     </main>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js">
+
+
+    </script>
+
 </html>
